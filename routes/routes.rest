@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6240ed90f0d8fe17beb75367
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Anantapon",
+    "subscribedToChannel":"Eat and Travel"
+}
+
+####
+
+DELETE  http://localhost:3000/subscribers/6240ed90f0d8fe17beb75367
+###
+
+PATCH  http://localhost:3000/subscribers/6240ee9ff0d8fe17beb7536e
+Content-Type: application/json
+
+{
+    "subscribedToChannel":"Camping"
+}
